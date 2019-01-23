@@ -1,0 +1,41 @@
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
+syntax on       
+let mapleader=";"
+set t_Co=256
+set ai
+set cursorline
+set hls
+set number
+set relativenumber
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set nocompatible 
+set softtabstop=4
+set noeb
+set foldmethod=syntax
+set nofoldenable
+set nowrap
+set showcmd
+set backspace=2  
+set ru           
+set incsearch    
+set smartindent  
+set confirm      
+set history=100  
+hi CursorLine cterm=none ctermbg=DarkMagenta ctermfg=White
+set mouse=a
+"set cursorline   
+"set cursorcolumn
+
+" Themes
+"colorscheme torte
+colorscheme desert
+"colorscheme molokai
+"colorscheme peachpuff
+
+set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,euc-jp,euc-kr,latin1
+
+
+
