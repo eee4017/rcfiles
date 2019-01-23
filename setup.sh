@@ -18,6 +18,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/peterhurford/up.zsh ~/.oh-my-zsh/custom/plugins/up
 
 # copy rcfiles
-cp vim/vimrc $HOME
+cp vim/vimrc $HOME/.vimrc
 cp zsh/zshrc $HOME/.zshrc
 cp tmux/tmux.conf $HOME/.tmux.conf

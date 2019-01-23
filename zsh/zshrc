@@ -1,7 +1,6 @@
 # ZSH
 
 export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 ZSH_THEME="gentoo"
 HISTTIMEFORMAT='%F %T'
 plugins=(
@@ -11,6 +10,7 @@ plugins=(
     extract
 )
 # if with root authentication you should install `sudo` plugin
+source $ZSH/oh-my-zsh.sh
 
 # alias
 alias J="jupyter notebook"
