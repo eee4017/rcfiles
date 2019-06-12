@@ -36,6 +36,7 @@ colorscheme desert
 "colorscheme peachpuff
 
 set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,euc-jp,euc-kr,latin1
+set pastetoggle=<F4>
 
 
 
