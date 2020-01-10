@@ -218,3 +218,5 @@ bar {
     mode dock
     modifier None
 }
+
+focus_on_window_activation focus
