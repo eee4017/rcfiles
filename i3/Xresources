@@ -1,0 +1,70 @@
+!---------------------------------
+! Xft settings
+! --------------------------------
+Xft.dpi:        110
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.autohint:   false
+Xft.lcdfilter:  lcddefault
+
+!---------------------------------
+! URXVT Terminal config
+! --------------------------------
+URxvt.depth:                    32
+URxvt*geometry:                 240x84
+URxvt.loginShell:               false 
+URxvt*scrollColor:              #777777
+URxvt.scrollStyle:              rxvt
+URxvt*scrollTtyKeypress:        true
+URxvt*scrollTtyOutput:          false
+URxvt*scrollWithBuffer:         true
+URxvt*skipScroll:               true
+URxvt*scrollBar:                false
+urxvt*background:               #000000
+urxvt*foreground:               #cccccc
+URxvt*fading:                   30
+URxvt*urgentOnBell:             false
+URxvt*visualBell:               false
+URxvt*mapAlert:                 true
+URxvt*mouseWheelScrollPage:     true
+URxvt.saveLines:                65535
+URxvt.cursorBlink:              false
+URxvt.utf8:                     true
+URxvt.locale:                   true
+URxvt.letterSpace:              -1
+URxvt.font:                     xft:monospace:pixelsize=18:style=regular,xft:Noto Sans Mono CJK TC:regular
+URxvt.boldFont:                 xft:monospace:pixelsize=18:style=bold,xft:Noto Sans Mono CJK TC:regular
+
+URxvt.transparent:   true
+URxvt.shading:       20
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Perl extensions
+URxvt.perl-ext-common:          default,matcher
+URxvt.matcher.button:           1
+URxvt.urlLauncher:              google-chrome-stable
+
+URxvt.perl-ext-common:          ...,font-size
+URxvt.keysym.C-Up:              perl:font-size:increase
+URxvt.keysym.C-Down:            perl:font-size:decrease
+URxvt.keysym.C-S-Up:            perl:font-size:incglobal
+URxvt.keysym.C-S-Down:          perl:font-size:decglobal
+
+URxvt.perl-ext:                 default,url-select
+URxvt.keysym.M-u:               perl:url-select:select_next
+URxvt.url-select.launcher:      /usr/bin/xdg-open
+URxvt.url-select.underline:     true
+
+URxvt.keysym.Home: \033[7~
+URxvt.keysym.End: \033[8~
+URxvt.keysym.KP_Home: \033[7~
+URxvt.keysym.KP_End:  \033[8~
+
+URxvt.keysym.Control-Up:     \033[1;5A
+URxvt.keysym.Control-Down:   \033[1;5B
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C

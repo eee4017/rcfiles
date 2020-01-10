@@ -1,0 +1,17 @@
+#!/bin/sh
+
+export PATH=$HOME/.local/bin:$PATH
+export BROWSER=google-chrome-stable
+
+export XMODIFIERS="@im=fcitx"
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
+fcitx &
+
+wal -R
+reload_dunst
+libinput-gestures-setup restart
+
+xrdb ~/.Xresources
+
+exec i3
