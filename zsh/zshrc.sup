@@ -1,0 +1,7 @@
+# urxvt
+bindkey "e[8~" end-of-line
+bindkey "e[7~" beginning-of-line
+
+# xclip
+alias xp='xclip -selection clipboard'
+
